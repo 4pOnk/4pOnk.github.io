@@ -22,13 +22,15 @@ document.querySelector(".generate").addEventListener("click", () => {
 });
 
 document.querySelector("img").addEventListener("click", () => {
-  var copyText = document.querySelector(".pasta");
-  let range = new Range();
+  for(let i = 0; i < 3; i++) {
+    var copyText = document.querySelector(".pasta");
+    let range = new Range();
 
-  range.setStart(copyText, 0);
-  range.setEnd(copyText, 1);
-  document.getSelection().removeAllRanges();
-  document.getSelection().addRange(range);
-  document.execCommand("copy");
-  document.getSelection().removeAllRanges();
+    range.setStart(copyText, 0);
+    range.setEnd(copyText, 1);
+    document.getSelection().removeAllRanges();
+    document.getSelection().addRange(range);
+    document.execCommand("copy");
+    document.getSelection().removeAllRanges();
+  }
 });
