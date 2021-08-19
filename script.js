@@ -27,6 +27,7 @@ document.querySelector("img").addEventListener("click", () => {
 
   range.setStart(copyText, 0);
   range.setEnd(copyText, 1);
+  document.getSelection().removeAllRanges();
   document.getSelection().addRange(range);
   document.execCommand("copy");
   document.getSelection().removeAllRanges();
