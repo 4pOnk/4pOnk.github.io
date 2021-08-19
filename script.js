@@ -22,7 +22,6 @@ document.querySelector(".generate").addEventListener("click", () => {
 });
 
 document.querySelector("img").addEventListener("click", () => {
-  for(let i = 0; i < 3; i++) {
     var copyText = document.querySelector(".pasta");
     let range = new Range();
 
@@ -32,5 +31,6 @@ document.querySelector("img").addEventListener("click", () => {
     document.getSelection().addRange(range);
     document.execCommand("copy");
     document.getSelection().removeAllRanges();
-  }
+  
+  console.log('copied');
 });
