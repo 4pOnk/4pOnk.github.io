@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasta maker</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h2>Ку 👋</h2>
+
+        <p>
+          Введи текст <br />(если между словами не нужен смайл, вместо пробела
+          поставьте "_")
+        </p>
+        <textarea class="text_inp">ПАСТА</textarea>
+
+        <p>
+          Выбери набор смайлов между словами (Не обязательно смайлов) через
+          пробел
+        </p>
+        <textarea class="smiles_inp">😤 😭 🙁 😈</textarea><br />
+
+        <label>
+          <input type="checkbox" class="checkbox"/>
+          <span>Использовать случайные эмоджи</span>
+        </label>
+
+        <p>
+          Количество повторов:
+          <input type="text" class="repeats_inp" value="3" />
+        </p>
+
+        <input type="button" value="Сгенерировать пасту" class="generate" />
+      </div>
+
+      <div class="flex">
+        <div class="pasta">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+          voluptates ea sed sit natus provident iure quia illum. Similique quae
+          labore quaerat aliquam cumque voluptatibus in a quasi necessitatibus
+          deleniti?
+        </div>
+        <img
+          src="https://files.softicons.com/download/toolbar-icons/mono-general-icons-2-by-custom-icon-design/png/512x512/copy.png"
+          class="copy"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

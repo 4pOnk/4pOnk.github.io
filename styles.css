@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(59, 14, 79);
+  background: linear-gradient(
+    156deg,
+    rgba(59, 14, 79, 1) 0%,
+    rgba(253, 180, 255, 1) 100%
+  );
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  width: 30%;
+  text-align: center;
+}
+.form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 30px;
+}
+p {
+  margin-top: 15px;
+}
+
+textarea {
+  outline: none;
+  width: 70%;
+  resize: none;
+  margin-top: 10px;
+  border: 2px solid rgb(63, 20, 57);
+  border-radius: 7px;
+  text-align: center;
+}
+.repeats_inp {
+  width: 40px;
+  text-align: center;
+  outline: none;
+  border: 2px solid rgb(63, 20, 57);
+  border-radius: 5px;
+}
+
+.generate {
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 70%;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    #68ccf3,
+    #5569f7,
+    #9355f7,
+    #c855f7,
+    #f755a7,
+    #68ccf3
+  );
+  background-size: 500%;
+  animation: 5s linear 0s infinite anime;
+  color: white;
+  font-size: 20px;
+  word-wrap: break-word;
+}
+.pasta {
+  width: 70%;
+  max-height: 300px;
+  overflow: auto;
+  margin-left: 15%;
+  text-align: left;
+  margin-top: 15px;
+  border: 2px solid rgb(63, 20, 57);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.copy {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.flex {
+  display: flex;
+  background-color: white;
+  margin-top: 25px;
+  border-radius: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .generate {
+    font-size: 15px;
+  }
+}
+@keyframes anime {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 125%;
+  }
+}
