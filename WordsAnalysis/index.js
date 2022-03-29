@@ -47,6 +47,8 @@ let scan = () => {
             let node = document.createElement('span');
             node.innerHTML = word.word;
             let fs = (word.count / sum * 100) * 10;
+            if(fs < 20) fs = 20;
+            else if(fs > 100) fs = 100
             node.style.fontSize = fs < 20 ? 20 : fs + 'px';
             textSizeBlock.append(node)
         })
