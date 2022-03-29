@@ -1,0 +1,41 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scan{
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.text{
+    width: 40vw;
+    height: 200px;
+    overflow: auto;
+    resize: none;
+    margin-top: 50px;
+}
+.textSize{
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+.textSize *{
+    margin: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
